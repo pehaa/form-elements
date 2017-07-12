@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaires HTML</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="layout">
+		<section class="content">
+			<h1>Formulaire HTML</h1>
+			<p>L'élément HTML <code>&lt;form&gt;</code> représente une section d'un document qui contient des contrôles interactifs permettant à un utilisateur d'envoyer des données à un serveur web.</p>
+			<h2>Un exemple&nbsp;:</h2>
+			<form action="" method="post">
+				<label for="POST-name">Nom :</label>
+				<input id="POST-name" type="text" name="name">
+				<input type="submit" value="Enregistrer">
+			</form>
+			<h3>Le code derrière tout ça&nbsp;:</h3> 	
+			<pre>
+&lt;form action="/register" method="POST"&gt;
+	&lt;label for="name">Nom :&lt;/label&gt;
+	&lt;input id="name" type="text" name="name"&gt;
+	&lt;input type="submit" value="Enregistrer"&gt;
+&lt;/form&gt;
+			</pre>
+			<h3>Un peu d'explication :</h3>
+			<p>L'attribut <code>method</code> définit la méthode HTTP qui sera utilisée pour envoyer les données au serveur.</p>
+			<p>Si c'est <code>GET</code> les données du formulaire sont ajoutées à l'URI de l'attribut action avec '?' comme séparateur.</p>
+			<p>Si c'est <code>POST</code> les données du formulaire sont incluses dans le corps du formulaire et envoyées vers le serveur.</p>
+			<p>L'attribut <code>action</code> indique le chemin vers le fichier qui traitera les infos transmises via formulaire.</p>
+		<footer><small>&copy; 2017 Créé par C4pprio</small></footer>
+		</section>
+		<section class="list-of-links">
+			<h2>Liste des éléments&nbsp;:</h2>
+			<ul class="list-of-links__ul">
+				<li><a href="elements/input-type-chekbox.html">input type checkbox</a></li>
+				<li><a href="elements/input-type-email.html">input type email</a></li>
+				<li><a href="elements/input-type-file.html">input type file</a></li>
+				<li><a href="elements/input-type-number.html">input type number</a></li>
+				<li><a href="elements/input-type-radio.html">input type radio</a></li>
+				<li><a href="elements/input-type-range.html">input type range</a></li>
+				<li><a href="elements/input-type-reset.html">input type reset</a></li>
+				<li><a href="elements/input-type-submit.html">input type submit</a></li>
+				<li><a href="elements/input-type-text.html">input type text</a></li>
+				<li><a href="elements/select.html">select</a></li>
+				
+			</ul>
+		</section>
+	</div>
+</body>
+</html>

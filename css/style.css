@@ -1,0 +1,55 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: "Nunito", sans-serif;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	font-size: 18px;
+}
+
+.layout {
+	display: flex;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+.content {
+	padding: 0 48px;
+	max-width: 960px;
+}
+.list-of-links {
+	min-width: 240px;
+	background: #303030;
+	color: #fff;
+	padding: 32px;
+}
+.list-of-links__ul {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+.list-of-links li {
+	padding: 12px 0;
+	border-bottom: 1px dashed;
+}
+.list-of-links a {
+	text-decoration: none;
+	color: white;
+}
+
+pre {
+	padding: 24px;
+	background: lightBlue;
+}
+
+.link-to-home {
+	display: inline-block;
+	font-size: 14px;
+	margin-top: 24px;
+}
